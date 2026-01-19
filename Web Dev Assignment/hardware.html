@@ -2,245 +2,327 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hardware - Gamer's Paradise</title>
+  <title>Hardware | Gamer's Paradise</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="hardware.html">HARDWARE</a></li>
-            <li><a href="games.html">GAMES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contacts.html">CONTACT US</a></li>
-        </ul>
-    </nav>
-  </header>
 
-  <section class="products">
-    <h1>High-Spec Hardware for Gamers</h1>
+<header>
+  <h1>GAMER'S PARADISE</h1>
+  <p>High-Performance Gaming Hardware</p>
+</header>
 
-    <div class="hardware-gallery">
-      <div class="hardware-item">
-          <img src="hardware 1.jpg" alt="Hardware 1">
-          <div class="details">
-              <p><strong>KEYBOARD</strong></p>
-              <p>Specifications: V700 8A Wired Wireless Gaming Keyboard (Rapoo)</p>
-              <p>Price: R1499</p>
-          </div>
-      </div>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="hardware.html">HARDWARE</a></li>
+    <li><a href="games.html">GAMES</a></li>
+    <li><a href="cart.html">CART</a></li>
+  </ul>
+  
+  <div class="search-container">
+    <input 
+      type="text" 
+      id="searchInput" 
+      class="search-bar" 
+      placeholder="🔍 Search products..."
+      onkeyup="filterProducts()"
+    >
+  </div>
+</nav>
 
-      <div class="hardware-item">
-        <img src="hardware 2.jpg" alt="Hardware 2">
-        <div class="details">
-            <p><strong>KEYBOARD</strong></p>
-            <p>Specifications: Shiva Membrane Keyboard (Redragon)</p>
-            <p>Price: R599</p>
-        </div>
+<section class="hardware-gallery">
+
+  <div class="hardware-item"
+       data-product-name="V700 8A Gaming Keyboard"
+       data-product-price="1499">
+    <img src="hardware 1.jpg" alt="Keyboard">
+    <div class="details">
+      <p><strong>KEYBOARD</strong></p>
+      <p>V700 8A Wired Wireless Gaming Keyboard (Rapoo)</p>
+      <p>Price: R1499</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
     </div>
-
-    <div class="hardware-item">
-      <img src="hardware 4.jpg" alt="Hardware 4">
-      <div class="details">
-          <p><strong>KEYBOARD</strong></p>
-          <p>Specifications: Centaur 2 Gaming Keyboard (Redragon)</p>
-          <p>Price: R429</p>
-      </div>
   </div>
 
-<div class="hardware-item">
-  <img src="hardware 5.1.jpg" alt="Hardware 5.1">
-  <div class="details">
+  <div class="hardware-item"
+       data-product-name="Shiva Membrane Keyboard"
+       data-product-price="599">
+    <img src="hardware 2.jpg" alt="Keyboard">
+    <div class="details">
       <p><strong>KEYBOARD</strong></p>
-      <p>Specifications: V700RGB Wired Gaming Keyboard (Rapoo)</p>
+      <p>Shiva Membrane Keyboard (Redragon)</p>
+      <p>Price: R599</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Centaur 2 Gaming Keyboard"
+       data-product-price="429">
+    <img src="hardware 4.jpg" alt="Keyboard">
+    <div class="details">
+      <p><strong>KEYBOARD</strong></p>
+      <p>Centaur 2 Gaming Keyboard (Redragon)</p>
+      <p>Price: R429</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="V700RGB Gaming Keyboard"
+       data-product-price="1069">
+    <img src="hardware 5.1.jpg" alt="Keyboard">
+    <div class="details">
+      <p><strong>KEYBOARD</strong></p>
+      <p>V700RGB Wired Gaming Keyboard (Rapoo)</p>
       <p>Price: R1069</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 6.1.jpg" alt="Hardware 6.1">
-  <div class="details">
-      <p><strong>KEYBOARD</strong></p>
-      <p>Specifications: V720 Wired Gaming Keyboard (Rapoo)</p>
-      <p>Price: R1299</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 7.1.jpeg" alt="Hardware 7.1">
-  <div class="details">
-      <p><strong>KEYBOARD</strong></p>
-      <p>Specifications: VPro V820 Backlit Mechanical Keyboard with Palm Rest (Rapoo)</p>
-      <p>Price: R1299</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 3.jpg" alt="Hardware 3">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Darkless GH9A Gaming Headset (Canyon)</p>
-      <p>Price: R475</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 5.jpg" alt="Hardware 5">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Xbox Wired Headset (XBS)</p>
-      <p>Price: R1399</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 6.jpg" alt="Hardware 6">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Turtle Beach Earforce Recon 70 (XB1)</p>
-      <p>Price: R899</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 7.jpg" alt="Hardware 7">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Sony Playstation Pulse Explore Wireless Earbuds (PS5)</p>
-      <p>Price: R4999</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 8.jpg" alt="Hardware 8">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Sony Playstation Pulse Elite Wireless Headset (PS5)</p>
-      <p>Price: R3499</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 9.jpg" alt="Hardware 9">
-  <div class="details">
-      <p><strong>HEADSETS</strong></p>
-      <p>Specifications: Turtle Beach Earforce Recon 50X (XB1)</p>
-      <p>Price: R699</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 10.jpg" alt="Hardware 10">
-  <div class="details">
-      <p><strong>HARDDRIVE</strong></p>
-      <p>Specifications: 2TB Playstation Drive USB 3 White (Seagate)</p>
-      <p>Price: R2099 </p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 11.jpg" alt="Hardware 11">
-  <div class="details">
-      <p><strong>HARDDRIVE</strong></p>
-      <p>Specifications: 4TB XBOX Portable Drive (Seagate)</p>
-      <p>Price: R3199</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 12.jpg" alt="Hardware 12">
-  <div class="details">
-      <p><strong>MOUSE</strong></p>
-      <p>Specifications: Fortnax GM636 RGB 9 Button Mouse (Canyon)</p>
-      <p>Price: R289</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 13.png" alt="Hardware 13">
-  <div class="details">
-      <p><strong>MOUSE</strong></p>
-      <p>Specifications: Eclector GM3 RGB 6 Button Mouse (Canyon)</p>
-      <p>Price: R189</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 15.jpg" alt="Hardware 15">
-  <div class="details">
-      <p><strong>MOUSE</strong></p>
-      <p>Specifications: VPro V20S Gaming Mouse (Rapoo)</p>
-      <p>Price: R349</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 21.jpg" alt="Hardware 21">
-  <div class="details">
-      <p><strong>MOUSE</strong></p>
-      <p>Specifications: Razer Deathadder V3 Mouse</p>
-      <p>Price: R1699</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 14.jpg" alt="Hardware 14">
-  <div class="details">
-      <p><strong>MOUSEPAD</strong></p>
-      <p>Specifications: Flash Lightening Mouse Mat (Prima)</p>
-      <p>Price: R99</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 16.jpg" alt="Hardware 16">
-  <div class="details">
-      <p><strong>MOUSEPAD</strong></p>
-      <p>Specifications: Pokemon Pikachu Flexible Mousepad (ME)</p>
-      <p>Price: R99</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 17.jpg" alt="Hardware 17">
-  <div class="details">
-      <p><strong>MOUSEPAD</strong></p>
-      <p>Specifications: Pokemon Starters Kanto Flexible Mousepad (ME)</p>
-      <p>Price: R99</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 18.jpg" alt="Hardware 18">
-  <div class="details">
-      <p><strong>RACING GEAR</strong></p>
-      <p>Specifications: Thrustmaster Ferrari 458 Spider XBOX One Wheel</p>
-      <p>Price: R3299</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 19.jpg" alt="Hardware 19">
-  <div class="details">
-      <p><strong>RACING GEAR</strong></p>
-      <p>Specifications: Evolution Pro Red Bull Racing ESports (Playseat)</p>
-      <p>Price: R10999</p>
-  </div>
-</div>
-
-<div class="hardware-item">
-  <img src="hardware 20.jpg" alt="Hardware 20">
-  <div class="details">
-      <p><strong>RACING GEAR</strong></p>
-      <p>Specifications: Thrustmaster TM Racing Clamp PC PS XboxOne</p>
-      <p>Price: R19999</p>
-  </div>
-</div>
-
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
     </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="V720 Gaming Keyboard"
+       data-product-price="1299">
+    <img src="hardware 6.1.jpg" alt="Keyboard">
+    <div class="details">
+      <p><strong>KEYBOARD</strong></p>
+      <p>V720 Wired Gaming Keyboard (Rapoo)</p>
+      <p>Price: R1299</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="VPro V820 Mechanical Keyboard"
+       data-product-price="1299">
+    <img src="hardware 7.1.jpeg" alt="Keyboard">
+    <div class="details">
+      <p><strong>KEYBOARD</strong></p>
+      <p>VPro V820 Backlit Mechanical Keyboard with Palm Rest (Rapoo)</p>
+      <p>Price: R1299</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Darkless Gaming Headset"
+       data-product-price="475">
+    <img src="hardware 3.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Darkless GH9A Gaming Headset (Canyon)</p>
+      <p>Price: R475</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Xbox Wired Headset"
+       data-product-price="1399">
+    <img src="hardware 5.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Xbox Wired Headset (XBS)</p>
+      <p>Price: R1399</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Turtle Beach Earforce Recon 70"
+       data-product-price="899">
+    <img src="hardware 6.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Turtle Beach Earforce Recon 70 (XB1)</p>
+      <p>Price: R899</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Sony Playstation Pulse Explore Earbuds"
+       data-product-price="4999">
+    <img src="hardware 7.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Sony Playstation Pulse Explore Wireless Earbuds (PS5)</p>
+      <p>Price: R4999</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Sony Playstation Pulse Elite Headset"
+       data-product-price="3499">
+    <img src="hardware 8.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Sony Playstation Pulse Elite Wireless Headset (PS5)</p>
+      <p>Price: R3499</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Turtle Beach Earforce Recon 50X"
+       data-product-price="699">
+    <img src="hardware 9.jpg" alt="Headset">
+    <div class="details">
+      <p><strong>HEADSET</strong></p>
+      <p>Turtle Beach Earforce Recon 50X Gaming Headset</p>
+      <p>Price: R699</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Seagate 2TB Playstation Drive"
+       data-product-price="2099">
+    <img src="hardware 10.jpg" alt="Storage">
+    <div class="details">
+      <p><strong>STORAGE</strong></p>
+      <p>Seagate 2TB External HDD for Playstation</p>
+      <p>Price: R2099</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Seagate 4TB XBOX Portable Drive"
+       data-product-price="3199">
+    <img src="hardware 11.jpg" alt="Storage">
+    <div class="details">
+      <p><strong>STORAGE</strong></p>
+      <p>Seagate 4TB Portable External HDD for Xbox</p>
+      <p>Price: R3199</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Fortnax GM636 RGB Mouse"
+       data-product-price="289">
+    <img src="hardware 12.jpg" alt="Mouse">
+    <div class="details">
+      <p><strong>MOUSE</strong></p>
+      <p>Fortnax GM636 RGB Gaming Mouse</p>
+      <p>Price: R289</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Eclector GM3 RGB Mouse"
+       data-product-price="189">
+    <img src="hardware 13.png" alt="Mouse">
+    <div class="details">
+      <p><strong>MOUSE</strong></p>
+      <p>Eclector GM3 RGB Gaming Mouse</p>
+      <p>Price: R189</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="VPro V20S Gaming Mouse"
+       data-product-price="349">
+    <img src="hardware 15.jpg" alt="Mouse">
+    <div class="details">
+      <p><strong>MOUSE</strong></p>
+      <p>VPro V20S RGB Gaming Mouse with Precision Sensor</p>
+      <p>Price: R349</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Razer Deathadder V3 Mouse"
+       data-product-price="1699">
+    <img src="hardware 21.jpg" alt="Mouse">
+    <div class="details">
+      <p><strong>MOUSE</strong></p>
+      <p>Razer Deathadder V3 Pro Gaming Mouse</p>
+      <p>Price: R1699</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Flash Lightening Mouse Mat"
+       data-product-price="99">
+    <img src="hardware 14.jpg" alt="Mousepad">
+    <div class="details">
+      <p><strong>MOUSEPAD</strong></p>
+      <p>Flash Lightening RGB Gaming Mouse Mat</p>
+      <p>Price: R99</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Pokemon Pikachu Mousepad"
+       data-product-price="99">
+    <img src="hardware 16.jpg" alt="Mousepad">
+    <div class="details">
+      <p><strong>MOUSEPAD</strong></p>
+      <p>Pokemon Pikachu RGB Gaming Mousepad</p>
+      <p>Price: R99</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Pokemon Starters Kanto Mousepad"
+       data-product-price="99">
+    <img src="hardware 17.jpg" alt="Mousepad">
+    <div class="details">
+      <p><strong>MOUSEPAD</strong></p>
+      <p>Pokemon Starters Kanto RGB Gaming Mousepad</p>
+      <p>Price: R99</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Thrustmaster Ferrari 458 Wheel"
+       data-product-price="3299">
+    <img src="hardware 18.jpg" alt="Racing Wheel">
+    <div class="details">
+      <p><strong>RACING WHEEL</strong></p>
+      <p>Thrustmaster Ferrari 458 Racing Wheel</p>
+      <p>Price: R3299</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Evolution Pro Red Bull Racing Seat"
+       data-product-price="10999">
+    <img src="hardware 19.jpg" alt="Racing Seat">
+    <div class="details">
+      <p><strong>RACING SEAT</strong></p>
+      <p>Evolution Pro Red Bull Racing Gaming Seat</p>
+      <p>Price: R10999</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hardware-item"
+       data-product-name="Thrustmaster Racing Clamp"
+       data-product-price="19999">
+    <img src="hardware 20.jpg" alt="Racing Clamp">
+    <div class="details">
+      <p><strong>RACING CLAMP</strong></p>
+      <p>Thrustmaster Pro Racing Wheel Clamp Mount</p>
+      <p>Price: R19999</p>
+      <button class="add-to-cart-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
 </section>
-  <script src="main.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>

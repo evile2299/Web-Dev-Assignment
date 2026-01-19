@@ -7,36 +7,159 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="hardware.html">HARDWARE</a></li>
-        <li><a href="games.html">GAMES</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contacts.html">CONTACT US</a></li>
-    </ul>
-    </nav>
-  </header>
 
-  <section class="contact">
-    <h1>Contact Us</h1>
-    <form action="/submit" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      
-      <button type="submit">Send</button>
-    </form>
-    <p>Phone: (123) 456-7890</p>
-    <p>Email: info@gamersparadise.com</p>
-    <p>Address: 123 Gaming St, Game City, USA</p>
-  </section>
+<header>
+  <h1 style="text-align: center; padding: 20px 0; margin-bottom: 0;">💌 GAMER'S PARADISE</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="hardware.html">HARDWARE</a></li>
+      <li><a href="games.html">GAMES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contacts.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Intro Section -->
+<section class="contact-intro">
+  <h1>💌 Contact Us</h1>
+  <p>We'd love to hear from you! Whether you have questions about our products, need support, or just want to share your gaming stories, our team is here to help.</p>
+  <p style="color: #00ffd5; font-weight: bold;">⚡ Average response time: 24 hours</p>
+</section>
+
+<!-- Contact Methods -->
+<section class="contact-methods">
+  <h2>📍 Get In Touch</h2>
+  <div class="methods-grid">
+    <div class="method-card">
+      <div class="method-icon">📧</div>
+      <h3>Email</h3>
+      <p>info@gamersparadise.com</p>
+      <p style="font-size: 0.9rem; color: #aaaacc;">Response in 24 hours</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">📞</div>
+      <h3>Phone</h3>
+      <p>(123) 456-7890</p>
+      <p style="font-size: 0.9rem; color: #aaaacc;">Mon-Fri, 9 AM - 6 PM</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">🏠</div>
+      <h3>Address</h3>
+      <p>123 Gaming St, Game City, USA</p>
+      <p style="font-size: 0.9rem; color: #aaaacc;">Visit us anytime!</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">💬</div>
+      <h3>Live Chat</h3>
+      <p>Available on our website</p>
+      <p style="font-size: 0.9rem; color: #aaaacc;">9 AM - 9 PM EST</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form-section">
+  <h2>📝 Send Us a Message</h2>
+  <form class="contact-form" action="/submit" method="post">
+    <div class="form-group">
+      <label>Full Name:</label>
+      <input type="text" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email Address:</label>
+      <input type="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label>Subject:</label>
+      <input type="text" placeholder="What is this about?" required>
+    </div>
+
+    <div class="form-group">
+      <label>Message:</label>
+      <textarea placeholder="Tell us your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message 💖</button>
+  </form>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2>❓ Frequently Asked Questions</h2>
+  <div class="faq-grid">
+    <div class="faq-card">
+      <h3>❓ What are your business hours?</h3>
+      <p>We're open Monday to Friday, 9 AM to 6 PM EST. Our live chat is available until 9 PM EST for urgent matters.</p>
+    </div>
+    <div class="faq-card">
+      <h3>🚚 How long does shipping take?</h3>
+      <p>Standard shipping takes 5-7 business days. Express shipping (2-3 days) is available at checkout.</p>
+    </div>
+    <div class="faq-card">
+      <h3>💰 Do you offer refunds?</h3>
+      <p>Yes! We offer a 30-day money-back guarantee on all products if you're not satisfied.</p>
+    </div>
+    <div class="faq-card">
+      <h3>🎮 Can I return my order?</h3>
+      <p>Absolutely! Return items within 30 days of purchase for a full refund or exchange.</p>
+    </div>
+    <div class="faq-card">
+      <h3>🔧 Do you provide technical support?</h3>
+      <p>Yes, our support team is available via email, phone, and live chat to help with any technical issues.</p>
+    </div>
+    <div class="faq-card">
+      <h3>📦 How can I track my order?</h3>
+      <p>After shipping, you'll receive a tracking number via email to monitor your package in real-time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media Section -->
+<section class="social-connect">
+  <h2>🌐 Connect With Us</h2>
+  <p>Follow us on social media for gaming tips, exclusive deals, and community updates!</p>
+  <div class="social-buttons">
+    <a href="#" class="social-btn">🐦 Twitter</a>
+    <a href="#" class="social-btn">📘 Facebook</a>
+    <a href="#" class="social-btn">📸 Instagram</a>
+    <a href="#" class="social-btn">▶️ YouTube</a>
+    <a href="#" class="social-btn">🎮 Discord</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>📍 Locations</h4>
+      <p>We have multiple locations worldwide. Contact us to find the one nearest you!</p>
+    </div>
+    <div class="footer-section">
+      <h4>🤝 Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Community Forum</a></li>
+        <li><a href="#">Bug Report</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>⚖️ Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Gamer's Paradise. All rights reserved. 🎮</p>
+  </div>
+</footer>
+
 <script src="main.js"></script>
 </body>
 </html>

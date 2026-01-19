@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+    <h1 style="text-align: center; padding: 20px 0; margin-bottom: 0;">🎮 GAMER'S PARADISE</h1>
     <nav class="navbar">
         <ul>
             <li><a href="index.html">HOME</a></li>
@@ -15,7 +16,17 @@
             <li><a href="games.html">GAMES</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contacts.html">CONTACT US</a></li>
+            <li><a href="cart.html">🛒 CART</a></li>
         </ul>
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-bar" 
+            placeholder="🔍 Search games..."
+            onkeyup="filterProducts()"
+          >
+        </div>
     </nav>
   </header>
 
@@ -23,98 +34,106 @@
     <h1>Top 10 Computer Games</h1>
 
 <div class="game-gallery">
-    <div class="game-item">
+    <div class="game-item" data-product-name="Star Wars Outlaws" data-product-price="1429">
         <img src="GAME 1.jpg" alt="GAME 1">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Star Wars Outlaws Special Edition</p>
             <p>Price: R1429</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="EA Sports F1 24" data-product-price="1499">
         <img src="GAME 2.jpg" alt="GAME 2">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: EA Sports F1 24</p>
             <p>Price: R1499</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="NBA 2K25" data-product-price="1299">
         <img src="GAME 3.jpg" alt="GAME 3">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: NBA 2K25</p>
             <p>Price: R999 - R1399</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Test Drive Unlimited Solar Crown" data-product-price="949">
         <img src="GAME 4.jpg" alt="GAME 4">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Test Drive Unlimited Solar Crown</p>
             <p>Price: R949</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Dragon Ball The Breakers Special Edition" data-product-price="399">
         <img src="GAME 5.jpg" alt="GAME 5">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Dragon Ball The Breakers Special Edition</p>
             <p>Price: R299 - R499</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Call Of Duty Black Ops 6" data-product-price="1529">
         <img src="GAME 6.jpg" alt="GAME 6">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Call Of Duty Black Ops 6</p>
             <p>Price: R1529</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Hogwarts Legacy" data-product-price="949">
         <img src="GAME 7.jpg" alt="GAME 7">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Hogwarts Legacy</p>
             <p>Price: R799 - R1099</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-     <div class="game-item">
+     <div class="game-item" data-product-name="Ravenswatch" data-product-price="685">
         <img src="GAME 8.jpg" alt="GAME 8">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Ravenswatch</p>
             <p>Price: R685</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Sonic X Shadow Generations" data-product-price="949">
         <img src="GAME 9.jpg" alt="GAME 9">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Sonic X Shadow Generations</p>
             <p>Price: R949</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
 
-      <div class="game-item">
+      <div class="game-item" data-product-name="Call of Duty Modern Warfare PS4" data-product-price="699">
         <img src="GAME 10.jpg" alt="GAME 10">
         <div class="details">
             <p><strong>GAME</strong></p>
             <p>Specifications: Call of Duty Modern Warfare (PS4)</p>
             <p>Price: R699</p>
+            <button class="add-to-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
     </div>
-
-</div>
   </section>
   <script src="main.js"></script>
 </body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Gamer's Paradise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 style="text-align: center; padding: 20px 0; margin-bottom: 0;">🛒 GAMER'S PARADISE - SHOPPING CART</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="hardware.html">HARDWARE</a></li>
+      <li><a href="games.html">GAMES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contacts.html">CONTACT US</a></li>
+      <li><a href="cart.html">🛒 CART</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Cart Section -->
+<section class="cart-section">
+  <h1>🛒 Your Shopping Cart</h1>
+  
+  <div id="cart-container">
+    <div id="cart-empty" class="cart-empty">
+      <p>Your cart is empty 😢</p>
+      <p style="color: #aaaacc;">Start shopping to add items to your cart!</p>
+      <a href="hardware.html" class="continue-shopping-btn">Continue Shopping 🛍️</a>
+    </div>
+
+    <div id="cart-items" class="cart-items" style="display: none;">
+      <div id="items-list"></div>
+      
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="subtotal">R0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Tax (15%):</span>
+          <span id="tax">R0.00</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total:</span>
+          <span id="total">R0.00</span>
+        </div>
+        
+        <div class="cart-actions">
+          <button id="checkout-btn" class="checkout-btn">Proceed to Checkout 💳</button>
+          <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart 🗑️</button>
+        </div>
+        
+        <a href="hardware.html" class="continue-shopping-btn">Continue Shopping 🛍️</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>🛒 Shopping</h4>
+      <ul>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>🤝 Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>⚖️ Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Gamer's Paradise. All rights reserved. 🎮</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
